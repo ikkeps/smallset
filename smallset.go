@@ -90,6 +90,5 @@ func (s *Set) findRight(pos int, v uint64) (int, bool) {
 }
 
 func (s *Set) getPosition(v uint64) int {
-	return int(v % uint64(len(s.items)))
-	//return int(v / s.itemsPerCell)
+	return int(v / s.itemsPerCell)
 }
