@@ -1,5 +1,3 @@
-package smallset
-
 //Append-only set of uint64 with tiny overhead.
 //
 //This is just append-only, fixed size set of uint64. It is faster than map and has lower memory footprint
@@ -8,6 +6,8 @@ package smallset
 //It can be used only for uniformly distributed uint64 values. **It will panic if there are no slots left.**
 //This is essentially hash table with open addressing, but without hash and with dead-simple addressing logic (lookup in nearest slots).
 //Not concurrent-safe.
+
+package smallset
 
 const empty = uint64(0)
 
