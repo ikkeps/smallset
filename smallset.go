@@ -6,7 +6,6 @@
 //It can be used only for uniformly distributed uint64 values. **It will panic if there are no slots left.**
 //This is essentially hash table with open addressing, but without hash and with dead-simple addressing logic (lookup in nearest slots).
 //Not concurrent-safe.
-
 package smallset
 
 const empty = uint64(0)
